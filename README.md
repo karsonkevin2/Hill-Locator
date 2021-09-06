@@ -6,6 +6,8 @@ Have you ever wondered what the biggest hills near you are? If you are a runner 
 - You will also need a digital elevation model (DEM). Data for the USA can readily be downloaded from https://apps.nationalmap.gov/downloader/#/. I recommend using 1/3 arc-second resolution.
 - Additionally, you need a dataset of roads. http://download.geofabrik.de/ provides extracts of OpenStreetMap (OSM) regions. Navigate to a state or state equivalency and download the shapefile.
 
+[![Youtube Tutorial Link](bait.png)](https://www.youtube.com/watch?v=P4vtoMJiGWc)
+
 The suggested way to use this model is to:
 1. Copy this code to your `QGIS\QGIS3\profiles\default\processing\models` folder
 2. In a new QGIS project, add the DEM as a raster layer and the OSM roads as a vector layer
