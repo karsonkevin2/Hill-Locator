@@ -16,7 +16,7 @@ The suggested way to use this model is to:
 5. Run the code
 6. Use graduated symbology set to either `height`, `grade_net`, or `CAT`, to visualize where hills are.
 
-Description of all parameters
+### Parameters
 - `Digital Elevation Model` - This should be a raster DEM. Ideally, the DEM is rectangular. It should represent pixels in space as different heights. The units should be specified in meters.
 -  `Projection` - This should be chosen to be a projection in meters, which is accurate for the area.
 -  `Minimum Grade` - This is the minimum grade that will be thresholded against. The default value is 2.5%. Any hill segment steeper than this value will be retained for analysis in the algorithm. Segments shallower than this will be discarded. 
@@ -27,3 +27,6 @@ Description of all parameters
 -  `Use Buffer` - This T/F value determines whether or not to shrink the extent of the clipped `Roads` layer by the amount specified in `Buffer scale`
 -  `Densified Separation` - When calculating grade. The roads will be sampled at intervals of this distance. The default of 5.0 meters works well with the 1/3 arc-second scale. If higher resolution DEM is used, this value should be set smaller.
 -  `Segment Lengths` - The roads will be examined averaged over this length. The default is 50 meters. This is long enough to accurately represent the grade of the hill, but not too long that it includes flat sections. If this value is lowered, noise may play a factor. If the value is raised, you may include sections of road which are not actual hills.
+
+### Model Diagram
+![Model Diagram](My_Model.svg)
